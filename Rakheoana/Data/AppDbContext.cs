@@ -12,5 +12,10 @@ namespace Rakheoana.Data
         }
 
             public DbSet<Platform> Platforms { get; set; }
+
+        internal int SavingChanges()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
