@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Rakheoana.Models;
 
-namespace  Rakheoana.Data
+namespace Rakheoana.Data
 {
 
     public class PlatformRepo : IPlatformRepo
@@ -14,11 +14,11 @@ namespace  Rakheoana.Data
         }
         public void CreatePlatform(Platform platform)
         {
-            if(platform ==null)
+            if (platform == null)
             {
                 throw new ArgumentNullException(nameof(platform));
             }
-            _context.Platforms.Add(platform)
+            _context.Platforms.Add(platform);
         }
 
         public IEnumerable<Platform> GetAllPlatforms()
